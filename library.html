@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIBRARY</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="library.css" />
+  </head>
+  <body style="background-color: whitesmoke">
+    <div class="head" style="margin-top: 0%; margin-left: 40%">
+      <p style="font-size: 40px">My<span class="text-danger">LIBRARY</span></p>
+    </div>
+
+    <div class="form" style="margin-top: 5%; margin-left: 18%">
+      <form id="newBook">
+        <div class="form">
+          <label for="title">TITLE</label>
+          <input
+            style="height: 30px; width: 200px; border-radius: 7px"
+            type="text"
+            id="title"
+            class="form"
+          />
+          <label for="author">AUTHOR</label>
+          <input
+            style="height: 30px; width: 200px; border-radius: 7px"
+            type="text"
+            id="author"
+            class="form"
+          />
+          <label for="page">PAGES</label>
+          <input
+            style="height: 30px; width: 200px; border-radius: 7px"
+            type="number"
+            id="pages"
+            class="form"
+          />
+          <input
+            style="
+              background-image: linear-gradient(
+                rgb(65, 65, 65),
+                rgb(224, 155, 155)
+              );
+              color: white;
+              border-radius: 50%;
+              height: 100px;
+              width: 100px;
+              margin-left: 3%;
+              border: none;
+            "
+            type="submit"
+            value="NEW BOOK"
+            class="btn btn-dark btn-circle"
+          />
+        </div>
+      </form>
+    </div>
+
+    <div class="display" style="margin-top: 5%; width: 800px; margin-left: 20%">
+      <table
+        class="table table-stripped text-primary"
+        style="background-color: black; border-radius: 15px"
+      >
+        <tbody
+          id="list"
+          style="
+            width: 100px;
+            background-image: linear-gradient(
+              rgb(149, 147, 245),
+              rgb(240, 148, 148)
+            );
+            font-size: 20px;
+            text-align: center;
+            color: black;
+          "
+        ></tbody>
+      </table>
+    </div>
+
+    <script src="library.js"></script>
+  </body>
+</html>
